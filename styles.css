@@ -1,0 +1,112 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #202d3a; /* Dark background for better contrast */
+    color: #ecf0f1; /* Light text for readability */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #34495e; /* Slightly lighter than the body */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background: #ecf0f1; /* Light input background */
+    color: #2c3e50; /* Dark text in input */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e74c3c; /* Bright red for visibility */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.task-section {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #1abc9c; /* Teal for pending tasks */
+    margin: 5px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+li.completed {
+    background: #3498db; /* Blue for completed tasks */
+    color: #fff;
+}
+
+.edit-btn, .delete-btn, .complete-btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.edit-btn {
+    background-color: #f39c12; /* Orange for edit */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Red for delete */
+    color: white;
+}
+
+.complete-btn {
+    background-color: #27ae60; /* Green for complete */
+    color: white;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: white; 
+    margin-left: 15px;
+}
